@@ -1,6 +1,6 @@
 # EELU-Website
  
-  # Availble current EELU's directories
+  ## Available current directories of EELU
   ### `/help-center`
   ### `/apply-rules`
   ### `/students-services`
