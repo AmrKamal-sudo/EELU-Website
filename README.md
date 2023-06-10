@@ -1,5 +1,12 @@
 # EELU-Website
  
+  # Availble current EELU's directories
+  ### `/help-center`
+  ### `/apply-rules`
+  ### `/students-services`
+  ### `/ecpc-center`
+
+ 
  
  # Getting Started with Create React App
 
