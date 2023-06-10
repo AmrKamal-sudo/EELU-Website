@@ -1,0 +1,30 @@
+.facts-stats-header {
+    background-color: transparent;
+    height: 530px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    &__text {
+        position: absolute;
+        bottom: 40px;
+
+        h1 {
+            font-size: 108px;
+            font-weight: 100;
+            color: #F4F5FC;
+            margin-bottom: 25px;
+        }
+    }
+
+    &__description {
+        font-size: 28px;
+        font-weight: 100;
+        margin: 0 auto;
+        color: #F9FAFB;
+        width: 90%;
+    }
+}

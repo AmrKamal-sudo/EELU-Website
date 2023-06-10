@@ -1,0 +1,14 @@
+@import "~bootstrap/scss/bootstrap";
+@import "assets/styles/form.scss";
+@import "assets/styles/generic.scss";
+.main-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.container-lg {
+  @media (min-width: 1400px) {
+    max-width: 1700px;
+  }
+}

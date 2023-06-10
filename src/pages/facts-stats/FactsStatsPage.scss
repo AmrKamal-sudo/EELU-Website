@@ -1,0 +1,45 @@
+.facts-stats-page-container {
+    height: 100%;
+    &__content {
+        position: relative;
+        height: 100%;
+        background-color: #ECF1FA;
+        -webkit-clip-path: polygon(95% 0, 100% 0, 100% 100%, 0 100%, 0 0, 5% 0, 10% 3%, 90% 3%);
+        clip-path: polygon(95% 0, 100% 0, 100% 100%, 0 100%, 0 0, 5% 0, 10% 5%, 90% 5%);
+        padding: 150px 20px 20px;
+        @media(max-width: 1200px) {
+            -webkit-clip-path: polygon(95% 0, 100% 0, 100% 100%, 0 100%, 0 0, 5% 0, 10% 3%, 90% 3%);
+            clip-path: polygon(95% 0, 100% 0, 100% 100%, 0 100%, 0 0, 5% 0, 10% 3%, 90% 3%);
+        }
+        &_title {
+            color: #1F4385;
+            font-size: 44px;
+            margin-bottom: 40px;
+            position: relative;
+            span {
+                margin-right: 10px;
+            }
+        }
+
+        &_stats {
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            gap: 80px;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            &__item {
+                h4 {
+                    color: #1F4385;
+                    font-size: 24px;
+                    margin-bottom: 0;
+                }
+
+                &-chart {
+                    width: 100%;
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+}

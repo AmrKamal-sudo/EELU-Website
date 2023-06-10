@@ -1,0 +1,172 @@
+.students-services {
+  &__container {
+    text-align: right;
+    padding-bottom: 20px;
+    &_content {
+      margin-top: 135px;
+      margin-right: 190px;
+      @media(max-width: 1200px) {
+        margin-right: 40px;
+      }
+      @media(max-width: 991px) {
+        margin-right: 0;
+      }
+    }
+    .form-section {
+      h6 {
+        color: #1F4385;
+        font-size: 28px;
+        font-weight: bold;
+        margin: 60px 0 30px;
+      }
+      .students-services__form {
+        h6 {
+          color: #1F4385;
+          font-size: 22px;
+          font-weight: normal;
+          padding-bottom: 20px;
+          border-bottom: 1px solid #D3E2F9;
+          margin-bottom: 40px;
+          &:last-of-type {
+            margin-top: 85px;
+            margin-bottom: 50px;
+          }
+        }
+        .form {
+          display: flex;
+          flex-direction: column;
+          gap: 38px;
+
+        }
+        .form-label {
+          color: #112361;
+            font-size: 22px;
+            font-weight: bold;
+          margin-bottom: 15px;
+        }
+        .form-control, .form-select {
+          border: 6px solid #D3E2F9;
+          border-radius: 5px;
+          background-color: #F4F5FC;
+          font-weight: bold;
+          color: #9CA3AF;
+          font-size: 16px;
+          height: 50px;
+          direction: rtl;
+        }
+        .radio-btns {
+          .form-check-label {
+            color: #1F4385;
+          }
+          .form-check-input:checked {
+            background-color: #1F4385;
+          }
+        }
+        .btn-primary {
+          margin-top: 40px;
+          background: #112361;
+          box-shadow: 0px 4px 10px #7B9ADB80;
+          border: 1px solid #D3E2F9;
+          border-radius: 5px;
+          font-weight: bold;
+          font-size: 18px;
+          color: #F4F5FC;
+          height: 45px;
+        }
+        .radio-btns {
+          flex-wrap: wrap;
+        }
+      }
+    }
+    .cards-section {
+      display: flex;
+      flex-direction: column;
+      gap: 55px;
+      .card {
+        background-color: #F4F5FC;
+        padding: 70px 60px;
+        direction: rtl;
+        border: none;
+        border-radius: 0;
+        h4 {
+          margin-bottom: 50px;
+          color: #1F4385;
+          font-size: 20px;
+          font-weight: bold;
+        }
+      }
+      .rules-notes {
+        &_list {
+          display: flex;
+          flex-direction: column;
+          gap: 35px;
+          margin-bottom: 110px;
+
+          .list-item {
+            display: flex;
+            gap: 25px;
+            align-items: center;
+
+            span:last-of-type {
+              font-size: 18px;
+              font-weight: normal;
+              color: #1F4385;
+              width: 100%;
+            }
+
+            .item-order {
+              padding: 5px 13px;
+              border-radius: 50%;
+              background-color: #1F4385;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              color: #F4F5FC;
+            }
+          }
+        }
+        .support-list {
+          display: flex;
+          flex-direction: column;
+            gap: 30px;
+          .list-item {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            align-items: center;
+            p {
+              font-size: 16px;
+              font-weight: bold;
+              color: #1F4385;
+              margin-bottom: 0;
+            }
+          }
+        }
+      }
+      .rules-notes, .other-services {
+        h4 {
+          color: #112361;
+          font-size: 32px;
+          font-weight: bold;
+          border-bottom: 1px solid #D3E2F9;
+          padding-bottom: 20px;
+          margin-bottom: 45px;
+        }
+      }
+      .other-services {
+        ul {
+          margin-bottom: 0;
+          li {
+            font-size: 16px;
+            color: #1F4385;
+            font-weight: bold;
+            margin-bottom: 30px;
+            &:last-of-type {
+              margin-bottom: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}

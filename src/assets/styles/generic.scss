@@ -1,0 +1,27 @@
+.section_title-wrapper {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 35px;
+  img {
+    width: 65px;
+    height: 70px;
+    object-fit: contain;
+  }
+  &_text {
+    max-width: 90%;
+    padding-bottom: 20px;
+    border-bottom: 3px solid #112361;
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    h3 {
+      color: #112361;
+      margin-bottom: 0;
+    }
+  }
+}

@@ -1,0 +1,70 @@
+.help-center-guide-tabs_wrapper {
+  height: 100%;
+  padding: 0 115px;
+  &.row {
+    flex-direction: row-reverse;
+  }
+  @media(max-width: 1100px) {
+    padding: 0 110px 0 50px;
+  }
+  .col-lg-9 {
+    padding: 0 110px;
+    @media(max-width: 1100px) {
+      padding: 0 50px;
+    }
+  }
+  .tabs-container {
+    background-color: #F4F5FC;
+    border-radius: 5px;
+    padding: 40px;
+    height: fit-content;
+    .nav-item {
+      margin-bottom: 20px;
+      .nav-link {
+        color: #1F4385;
+        font-size: 18px;
+        font-weight: bold;
+        height: fit-content;
+        border-radius: 5px;
+        text-align: right;
+        &.active {
+          background-color: #E5ECF9;
+        }
+      }
+    }
+  }
+  .help-center-guide-tabs__tab-content {
+    text-align: right;
+    h3 {
+      font-size: 40px;
+      color: #1F4385;
+      margin-bottom: 15px;
+    }
+    p {
+      margin-bottom: 40px;
+      color: #6B7280;
+      font-size: 18px;
+    }
+    .items-lists_wrapper {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      gap: 100px;
+      flex-wrap: wrap;
+      @media(max-width: 1100px) {
+        gap: 10px;
+      }
+      ul {
+        text-align: right;
+        direction: rtl;
+        li {
+          font-size: 20px;
+          color: #1F4385;
+          font-weight: bold;
+          margin-bottom: 40px;
+        }
+      }
+    }
+  }
+
+}

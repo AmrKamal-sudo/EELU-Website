@@ -1,0 +1,130 @@
+.help-center-apply-rules {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    align-items: flex-end;
+    padding: 0 0 130px;
+  }
+  &__navigation-header {
+    height: 310px;
+    width: 100%;
+    display: flex;
+    background-position: -45% 0 !important;
+    background-attachment: fixed !important;
+    @media(max-width: 1200px) {
+      background: none !important;
+    }
+    @media(max-width: 450px) {
+      height: fit-content;
+      padding: 30px;
+    }
+    h2 {
+      font-size: 65px;
+      color: #1F4385;
+        font-weight: bold;
+      padding-right: 20px;
+      @media(max-width: 450px) {
+        font-size: 40px;
+      }
+    }
+    .breadcrumb {
+        display: flex;
+        gap: 20px;
+      flex-wrap: wrap;
+    }
+    .breadcrumb-link{
+      color: #112361;
+        font-size: 20px;
+      font-weight: normal;
+      text-decoration: none;
+    }
+    .breadcrumb-link{
+      + .breadcrumb-link::before {
+        content: ">" !important;
+        align-self: baseline;
+        color: #7d8daa;
+        direction: rtl;
+        margin-left: 20px;
+      }
+    }
+    .container-lg {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+      justify-content: center;
+        padding: 0;
+
+    }
+  }
+  &__content {
+    margin-top: 60px;
+    .content_text-wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      h6 {
+        font-size: 24px;
+        color: #112361;
+        font-weight: 800;
+      }
+      ul {
+        list-style: none;
+        li {
+          font-size: 18px;
+          color: #112361;
+        }
+      }
+    }
+  }
+  &__related-topics {
+    margin-top: 115px;
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap-reverse;
+      margin-bottom: 40px;
+
+      h4 {
+        font-size: 29px;
+        color: #1F4385;
+        font-weight: bold;
+        text-align: right;
+        margin-bottom: 0;
+      }
+      &__carousal-btns {
+        display: flex;
+        gap: 10px;
+        .btn-icon {
+          svg {
+            fill: #112361;
+          }
+        }
+      }
+    }
+    .topics-items {
+      display: flex;
+      flex-direction: row-reverse;
+      gap: 30px;
+      @media (max-width: 991px) {
+        flex-wrap: wrap;
+
+      }
+      &_item {
+        background-color: #F4F5FC;
+        height: 180px;
+        width: 330px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h6 {
+          font-size: 18px;
+            color: #112361;
+          font-weight: normal;
+        }
+      }
+    }
+  }
+}

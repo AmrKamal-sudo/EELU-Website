@@ -1,0 +1,408 @@
+.help-center-page {
+  &__container {
+    height: 100%;
+    min-height: 100vh;
+  }
+
+  &__content {
+    height: 100%;
+    position: relative;
+  }
+
+  &__icons-wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    position: absolute;
+    top: -190px;
+    left: 0;
+    right: 0;
+    max-width: 900px;
+    margin: 0 auto;
+
+    &_icon {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+      cursor: pointer;
+
+      p {
+        font-size: 18px;
+        color: #1F4385;
+        margin: 0;
+        font-weight: bold;
+      }
+    }
+  }
+
+  &__pattern {
+    width: 100%;
+    height: 120px;
+    margin: 140px 0 30px;
+  }
+
+  &__student-guide-banner {
+    border: 1px solid #1F4385;
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    background-color: #061041;
+    height: 320px;
+    position: relative;
+    width: 95%;
+    margin: 0 auto;
+    @media(max-width: 1100px) {
+      height: fit-content;
+      width: 100%;
+    }
+
+    .content-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      @media(max-width: 1100px) {
+        flex-direction: column;
+      }
+    }
+
+    .image-wrapper {
+      img {
+        width: 100%;
+      }
+    }
+
+    &_text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-end;
+      gap: 10px;
+      width: 60%;
+      @media(max-width: 1100px) {
+        width: 100%;
+      }
+
+      h3, p {
+        color: #F4F5FC;
+        margin-bottom: 0;
+        text-align: right;
+      }
+      h3 {
+        font-size: 45px;
+      }
+
+      .btn {
+        background-color: #FFB03A;
+        color: #061041;
+        border: 1px solid #FFD587;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-size: 15px;
+        font-weight: bold;
+        cursor: pointer;
+        width: 150px;
+      }
+    }
+  }
+
+  &__student-guide {
+    margin-top: 130px;
+    margin-bottom: 200px;
+
+    .input-group {
+      border: 6px solid #D3E2F9;
+      border-radius: 5px;
+      .input-group-append {
+        background: #F4F5FC;
+      }
+      input {
+        font-size: 16px;
+        font-weight: bold;
+        color: #9CA3AF;
+        background: #F4F5FC;
+
+        &::placeholder {
+          font-size: 16px;
+          font-weight: bold;
+          color: #9CA3AF;
+        }
+      }
+    }
+  }
+
+
+  &__rules {
+    padding: 180px 250px 100px;
+    @media(max-width: 1400px) {
+      padding: 180px 100px 100px;
+    }
+    @media(max-width: 991px) {
+      padding: 50px;
+    }
+
+    h3 {
+      color: #D3E2F9;
+      font-size: 44px;
+      font-weight: bold;
+    }
+    .input-group {
+      border: 7px solid #112361;
+      border-radius: 5px;
+      .input-group-append {
+        background: #1F4385;
+      }
+      input {
+        font-size: 18px;
+        font-weight: bold;
+        color: #D3E2F9;
+        background: #1F4385;
+
+        &::placeholder {
+          font-size: 18px;
+          font-weight: bold;
+          color: #D3E2F9;
+        }
+      }
+    }
+  }
+
+  &__faq {
+    padding: 180px 250px 100px;
+    @media(max-width: 1400px) {
+      padding: 180px 100px 100px;
+    }
+    @media(max-width: 991px) {
+      padding: 50px;
+    }
+    .input-group {
+      border: 6px solid #D3E2F9;
+      border-radius: 5px;
+      .input-group-append {
+        background: #F4F5FC;
+      }
+      input {
+        font-size: 16px;
+        font-weight: bold;
+        color: #9CA3AF;
+        background: #F4F5FC;
+
+        &::placeholder {
+          font-size: 16px;
+          font-weight: bold;
+          color: #9CA3AF;
+        }
+      }
+    }
+    .expanded_faqs-list {
+      &.accordion {
+        width: 90%;
+
+        .accordion-item {
+          margin-bottom: 25px;
+          border: none;
+
+          .accordion-header {
+            .accordion-button {
+              background-color: transparent;
+              border: 1px solid #D1D5DB;
+              color: #1F4385;
+              font-size: 18px;
+              font-weight: bold;
+              padding: 20px 30px;
+              text-align: right;
+              border-radius: 5px;
+
+              &::after {
+                display: none;
+              }
+
+            }
+
+          }
+
+          .accordion-body {
+            color: #4B5563;
+            font-size: 18px;
+            font-weight: normal;
+            text-align: right;
+          }
+        }
+      }
+
+    }
+  }
+
+  &__pattern-triangle {
+    width: 100%;
+    height: 280px;
+    margin-bottom: 10px;
+    transform: rotate(180deg);
+  }
+
+  &__videos {
+    background-color: #061041;
+    padding: 180px 250px 100px;
+    @media(max-width: 1400px) {
+      padding: 180px 100px 100px;
+    }
+    @media(max-width: 991px) {
+      padding: 50px;
+    }
+
+    h3 {
+      color: #D3E2F9;
+      font-size: 44px;
+      font-weight: bold;
+    }
+    .input-group {
+      border: 7px solid #112361;
+      border-radius: 5px;
+      .input-group-append {
+        background: #1F4385;
+      }
+      input {
+        font-size: 18px;
+        font-weight: bold;
+        color: #D3E2F9;
+        background: #1F4385;
+
+        &::placeholder {
+          font-size: 18px;
+          font-weight: bold;
+          color: #D3E2F9;
+        }
+      }
+    }
+    .help-center-guide-tabs__tab-content {
+      .video-player {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        iframe {
+          width: 100% !important;
+        }
+        @media (max-width: 991px) {
+          margin-top: 30px;
+        }
+      }
+      .content {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        h3 {
+          color: #FFB03A;
+          font-weight: bold;
+            font-size: 18px;
+          margin-top: 40px;
+        }
+        h6 {
+          color: #fff;
+          font-size: 32px;
+          font-weight: normal;
+        }
+        p {
+          color: #D3E2F9;
+          font-size: 18px;
+        }
+        .btn-primary {
+          background: #FFB03A;
+          border: 1px solid #FFD587;
+          border-radius: 5px;
+          color: #061041;
+          font-size: 15px;
+          width: 147px;
+          height: 37px;
+        }
+
+      }
+    }
+    .help-center-guide-tabs_wrapper {
+      padding: 0 115px 0 60px;
+      .col-lg-9 {
+        padding-left: 0;
+        @media(max-width: 991px) {
+          padding: 0;
+        }
+      }
+      .tabs-container {
+        background-color: #112361;
+        .nav-item {
+          .nav-link {
+            color: #F4F5FC;
+            font-size: 20px;
+            &.active {
+              background-color: #061041;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &__suggestions {
+    padding: 180px 250px 100px;
+    background-color: #061041;
+    @media(max-width: 1400px) {
+      padding: 180px 100px 100px;
+    }
+    @media(max-width: 991px) {
+      padding: 50px;
+    }
+
+    h3 {
+      color: #D3E2F9;
+      font-size: 44px;
+      font-weight: bold;
+    }
+
+    &_content {
+      text-align: right;
+
+      p {
+        color: #F4F5FC;
+        font-size: 28px;
+        font-weight: normal;
+      }
+
+      .btn-outline-light {
+        width: 218px;
+        height: 38px;
+        border: 1px solid #F4F5FC;
+        margin-top: 48px;
+      }
+
+      .form-row {
+        margin-top: 80px;
+      }
+
+      .form-label {
+        color: #F4F5FC;
+        font-size: 22px;
+        font-weight: bold;
+        margin-bottom: 15px;
+      }
+
+      .form-control {
+        height: 52px;
+        background: #1F4385;
+        border: 6px solid #112361;
+        border-radius: 5px;
+        color: #E5E7EB;
+        font-weight: normal;
+
+        &::placeholder {
+          color: #E5E7EB;
+        }
+      }
+
+      textarea {
+        min-height: 270px;
+      }
+    }
+  }
+}
